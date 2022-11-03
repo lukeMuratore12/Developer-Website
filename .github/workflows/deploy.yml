@@ -15,5 +15,5 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-              cd CMSC389T-Project-5
+              cd lukeMuratore12.github.io
               git pull

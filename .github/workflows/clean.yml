@@ -15,4 +15,4 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
              unalias rm
-             rm -rf CMSC389T-Project-5
+             rm -rf lukeMuratore12.github.io
