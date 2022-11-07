@@ -1,16 +1,20 @@
 FROM node:10-alpine
 
-USER node
+RUN mkdir -p /home/node/app && chown -R node:node /home/node/app
 
-RUN mkdir -p /home/node/ && chown -R node:node /home/node/
+WORKDIR /home/node/app
 
 COPY package.json ./
 
 RUN npm install
 
+USER node
+
 EXPOSE 8080
 
-CMD [node app.js]
+COPY --chown=node:node . .
+
+CMD ["node", "app.js"]
 
 #Use the node:10-alpine image as a base to
 #create a directory for the app and its node_modules with node as its owner

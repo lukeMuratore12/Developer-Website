@@ -5,6 +5,9 @@ services:
     #fill out the configuration here
     networks:
       - app-network
+    image: node-web-app
+    container_name: nodejs
+    restart: unless-stopped
   
   #the nginx configuration is given below
   #the website will run on localhost:80 
@@ -28,7 +31,7 @@ volumes:
     driver_opts:
       type: none
       #fill out your absolute path to your folder here
-      device: /absolute/path/to/web/template/folder
+      device: /home/lmuratore/cmsc389t-temp/CMSC389T-Project-5
       o: bind
 
 networks:
