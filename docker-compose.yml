@@ -7,6 +7,8 @@ services:
       - app-network
     image: node:10-alpine
     container_name: nodejs
+    ports: 
+      - "80"
     restart: unless-stopped
   
   #the nginx configuration is given below
