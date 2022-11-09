@@ -5,7 +5,7 @@ services:
     #fill out the configuration here
     networks:
       - app-network
-    image: node-web-app
+    image: node:10-alpine
     container_name: nodejs
     restart: unless-stopped
   
