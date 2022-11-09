@@ -96,6 +96,7 @@ html {
     gap: 2.5rem;
     max-width: 68.75rem;
     margin: auto;
+    padding-top: 60px;
 }
 
 .hero img {
