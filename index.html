@@ -13,7 +13,7 @@
 
     <body>
         <header>
-            <nav>
+            <nav id = "navbar">
                 <h1>LUKE MURATORE</h1>
                 <ul class="nav__links">
                     <li><a href = "#about">About</a></li>
@@ -48,7 +48,7 @@
               I'm a computer science major at the University of Maryland, College Park, with a strong interest in being a software engineer upon graduation.
               I pride myself on being an enthusiastic team player and quick learner. 
               I am a junior alumni of the Business, Society and Economy Scholars program and a member of the QUEST Honors program, where each semester I use 
-              product management tools and data science to help provide recommendations to real-world companies. 
+              product management tools and data science to help provide recommendations to real-world companies. My interests include running, hiking, and anything outdoors with my friends. 
             </p>
             <p>
               Outside of my normal classwork, I am a Teaching Assistant for the class
@@ -755,5 +755,19 @@
             <a href="https://open.spotify.com/user/ltm157m?si=dbe275a54f1446d4" class="fa fa-spotify"></a>
           </li>
         </section>
+        <script>
+          window.onscroll = function() {myFunction()};
+          
+          var navbar = document.getElementById("navbar");
+          var sticky = navbar.offsetTop;
+          
+          function myFunction() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+          }
+          </script>
     </body>
 </html>
