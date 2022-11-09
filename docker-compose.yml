@@ -3,9 +3,6 @@ version: '3'
 services:
   nodejs:
     #fill out the configuration here
-    build:
-      context: Nodejs
-      dockerfile: Dockerfile
     networks:
       - app-network
     image: node:10-alpine
