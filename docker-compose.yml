@@ -3,12 +3,13 @@ version: '3'
 services:
   nodejs:
     #fill out the configuration here
+    build:
+      context: Nodejs
+      dockerfile: Dockerfile
     networks:
       - app-network
     image: node:10-alpine
     container_name: nodejs
-    ports: 
-      - "80:80"
     restart: unless-stopped
   
   #the nginx configuration is given below
