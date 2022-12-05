@@ -1,5 +1,5 @@
 # Personal Website
-Github Link: lukeMuratore12.github.io/Developer-Website
+Github Link: https://lukemuratore12.github.io/Developer-Website/
 
 TerpConnect Link: https://terpconnect.umd.edu/~lmurator/Developer-Website/
 
